@@ -10,7 +10,9 @@ function LoginCtrl ($scope, $state, $ionicLoading, $ionicPopup, $log) {
   ////////////
 
   function login () {
+
     if (_.isEmpty($scope.data.phone)) {
+      console.log("aa");
       return;
     }
 
@@ -26,6 +28,7 @@ function LoginCtrl ($scope, $state, $ionicLoading, $ionicPopup, $log) {
 
     confirmPopup.then(function (res) {
       if (! res) {
+        console.log("bb");
         return;
       }
 

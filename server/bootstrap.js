@@ -28,19 +28,19 @@
 
              var chats = [{
                  name: 'Ben Sparrow',
-                 picture: 'img/ben.png',
+                 picture: 'css/img/ben.png',
              }, {
                  name: 'Max Lynx',
-                 picture: 'img/max.png',
+                 picture: 'css/img/max.png',
              }, {
                  name: 'Adam Bradleyson',
-                 picture: 'img/adam.jpg',
+                 picture: 'css/img/adam.jpg',
              }, {
                  name: 'Perry Governor',
-                 picture: 'img/perry.png',
+                 picture: 'css/img/perry.png',
              }, {
                  name: 'Mike Harrington',
-                 picture: 'img/mike.png',
+                 picture: 'css/img/mike.png',
              }];
              /* chats.forEach(chat=> {
                   message = Messages.findOne({

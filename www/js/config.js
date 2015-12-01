@@ -1,5 +1,6 @@
 angular.module('whatsapp')
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform,$rootScope, $state) {
+
   $ionicPlatform.ready(function() {
    
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard

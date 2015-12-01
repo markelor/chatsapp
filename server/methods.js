@@ -1,6 +1,9 @@
 Meteor.methods({
     //check se utiliza para controlar si los parametros son correctos
     newMessage: function(message) {
+        if(!this.userId){
+            throw new Meteor.Error('not-logged-in','Must be logged to send message.');
+        }
         check(message, {
             text: String,
             chatId: String
@@ -18,6 +21,9 @@ Meteor.methods({
         return messageId;
     },
     updateName: function(name) {
+        if(!this.userId){
+            throw new Meteor.Error('not-logged-in','Must be logged to send message.');
+        }
         check(name, String);
         if (name.length === 0) {
             throw Meteor.Error('name-required', 'must provide user name');
