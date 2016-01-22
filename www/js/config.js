@@ -14,6 +14,8 @@ angular.module('whatsapp')
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
+
+  
   });
 });
 

@@ -1,2 +1,6 @@
-angular.module('whatsapp', ['ionic','angular-meteor','angularMoment']);
-
+angular
+  .module('whatsapp', [
+    'ionic',
+    'angular-meteor',
+    'angularMoment'
+  ]);
